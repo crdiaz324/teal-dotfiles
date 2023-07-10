@@ -59,7 +59,7 @@ format = '[$hostname]($style)'
 format = '[ﮫ $duration]($style)'
 style = 'bg:yellow fg:#000000'
 show_milliseconds = false
-min_time = 10000
+min_time = 1000
 
 [status]
 style = 'bg:yellow fg:#000000'

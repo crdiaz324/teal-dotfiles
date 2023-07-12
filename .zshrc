@@ -9,7 +9,7 @@ export STARSHIP_CACHE=~/.config/starship/cache
 
 eval "$(starship init zsh)"
 
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:${HOME}/go/bin:${HOME}/Documents/Dev/Git/opsbox/bin:${PATH}"
 
 # Setup gnu flavored utilities
 # https://gist.github.com/skyzyx/3438280b18e4f7c490db8a2a2ca0b9da

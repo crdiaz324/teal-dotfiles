@@ -1,11 +1,16 @@
 # yamllint disable rule:braces rule:commas rule:colons rule:comments-indentation
 ---
+env:
+  TERM: xterm-256color
+
 shell:
+  #program: /opt/homebrew/bin/tmux
   program: /bin/zsh
   args:
     - -l
     - -c
     - "tmux attach || tmux"
+
 
 window:
   # Blank space added around the window in pixels

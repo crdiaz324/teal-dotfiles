@@ -1,0 +1,99 @@
+# yamllint disable rule:braces rule:commas rule:colons rule:comments-indentation
+---
+env:
+  TERM: xterm-256color
+
+# shell:
+#   program: /bin/zsh
+#   args:
+#     - -l
+#     - -c
+#     - "tmux attach || tmux"
+shell:
+  program: /bin/zsh
+  args:
+    - --login
+
+
+window:
+  # Blank space added around the window in pixels
+  padding:
+    x: 2
+    y: 2
+
+  scrolling:
+    history: 10000
+    multiplier: 3 
+      
+  # Spread additional padding evenly around the terminal content
+  dynamic_padding: true
+
+  # Disable border and title bar
+  #decorations: transparent
+  #decorations: none
+  decorations: full
+  
+font:
+  normal:
+    family: MesloLGS Nerd Font
+    style: Regular
+  bold:
+    family: MesloLGS Nerd Font
+    style: Bold
+  italic:
+    family: MesloLGS Nerd Font
+    style: Italic
+
+  # Point size of the font
+  size: 15
+draw_bold_text_with_bright_colors: true
+
+
+# Color Schemes from:  https://github.com/eendroroy/alacritty-theme
+
+# Tomorrow Night Bright color scheme
+colors:
+  # Default colors
+  primary:
+    background: '0x000000'
+    foreground: '0xeaeaea'
+
+  # Normal colors
+  normal:
+    black:   '0x000000'
+    red:     '0xd54e53'
+    green:   '0xb9ca4a'
+    yellow:  '0xe6c547'
+    blue:    '0x7aa6da'
+    magenta: '0xc397d8'
+    cyan:    '0x70c0ba'
+    white:   '0x424242'
+
+  # Bright colors
+  bright:
+    black:   '0x666666'
+    red:     '0xff3334'
+    green:   '0x9ec400'
+    yellow:  '0xe7c547'
+    blue:    '0x7aa6da'
+    magenta: '0xb77ee0'
+    cyan:    '0x54ced6'
+    white:   '0x2a2a2a'
+
+mouse:
+  hide_when_typing: true
+
+selection:
+  # When set to `true`, selected text will be copied to the primary
+  # clipboard.
+  save_to_clipboard: true
+
+cursor:
+  # Thickness of the cursor (number from `0.0` to `1.0`)
+  thickness: 0.18
+  # Vi mode cursor style
+  vi_mode_style: Block
+
+key_bindings:
+  - { key: L, mods: Control, action: ClearLogNotice }
+  - { key: N, mods: Command, action: CreateNewWindow }

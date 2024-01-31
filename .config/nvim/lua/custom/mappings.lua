@@ -4,7 +4,7 @@ M.general = {
   v = {
     ["J"] = {
       ":m '>+1<CR>gv=gv",
-      "Move visual selection down", 
+      "Move visual selection down",
       opts = {nowait = true}},
     ["K"] = {":m '<-2<CR>gv=gv",
       "Move visual selection up",
@@ -27,7 +27,10 @@ M.general = {
       end,
       "Toggle floating term",
     },
-  }
+  },
+  -- i = {
+  --   ["p"] = {"x", "<leader>p", "\"_dP"}
+  -- }
 }
 
 M.dap = {

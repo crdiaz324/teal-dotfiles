@@ -1,9 +1,16 @@
 # Enable oh-my-posh
-if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-  # eval "$(oh-my-posh init zsh)"
-  # eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/hotstick.minimal.omp.json)"
-  eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/my-catppuccin.omp.json)"
-fi
+# if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+#   # eval "$(oh-my-posh init zsh)"
+#   # eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/hotstick.minimal.omp.json)"
+#   eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/my-catppuccin.omp.json)"
+# fi
+
+
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+export STARSHIP_CACHE=~/.config/starship/cache
+
+eval "$(starship init zsh)"
+
 
 export PATH="$HOME/.local/bin:$PATH"
 
@@ -32,6 +39,7 @@ alias vi="nvim"
 if which glocate > /dev/null; then
   [[ -f "$HOME/locatedb" ]] && export LOCATE_PATH="$HOME/locatedb"
 fi
+alias ifconfig="/sbin/ifconfig"
 
 
 # Setting up FZF default commands

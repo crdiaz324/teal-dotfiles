@@ -1,3 +1,6 @@
+-- prevents  copying overwritten text into the default register
+-- vim.opt.clipboard = ""
+
 -- runs in the main init.lua, its meant to have vim options, globals, autocmds, commands, etc.
 vim.opt.colorcolumn = "90"
 

@@ -1,4 +1,5 @@
 local plugins = {
+  { "ThePrimeagen/vim-be-good" , lazy = false },  -- load a plugin at startup
   {
     "williamboman/mason.nvim",
     opts = {

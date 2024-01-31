@@ -58,4 +58,4 @@ export FZF_CTRL_R_OPTS="--sort --exact"
 
 # Bare Git repo for dotfiles
 # https://www.atlassian.com/git/tutorials/dotfiles
-alias config='/usr/bin/git --git-dir=/Users/cdiaz/Documents/Dev/Git/dotfiles --work-tree=/Users/cdiaz'
+alias config='/usr/bin/git --git-dir=/Users/cdiaz/Documents/Dev/Git/dotfiles --work-tree=$HOME'

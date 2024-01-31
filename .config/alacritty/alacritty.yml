@@ -20,7 +20,7 @@ window:
 
   scrolling:
     history: 10000
-    multiplier: 3 
+    multiplier: 1 
       
   # Spread additional padding evenly around the terminal content
   dynamic_padding: true
@@ -29,6 +29,8 @@ window:
   #decorations: transparent
   #decorations: none
   decorations: full
+
+    #startup_mode: SimpleFullscreen
   
 font:
   normal:

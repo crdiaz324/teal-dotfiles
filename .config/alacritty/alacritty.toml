@@ -1,0 +1,80 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "0x666666"
+blue = "0x7aa6da"
+cyan = "0x54ced6"
+green = "0x9ec400"
+magenta = "0xb77ee0"
+red = "0xff3334"
+white = "0x2a2a2a"
+yellow = "0xe7c547"
+
+[colors.normal]
+black = "0x000000"
+blue = "0x7aa6da"
+cyan = "0x70c0ba"
+green = "0xb9ca4a"
+magenta = "0xc397d8"
+red = "0xd54e53"
+white = "0x424242"
+yellow = "0xe6c547"
+
+[colors.primary]
+background = "0x000000"
+foreground = "0xeaeaea"
+
+[cursor]
+thickness = 0.18
+vi_mode_style = "Block"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 15
+
+[font.bold]
+family = "MesloLGS Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "MesloLGS Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "MesloLGS Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "ClearLogNotice"
+key = "L"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "CreateNewWindow"
+key = "N"
+mods = "Command"
+
+[mouse]
+hide_when_typing = false
+
+[selection]
+save_to_clipboard = true
+
+[shell]
+args = ["-l", "-c", "tmux attach || tmux"]
+program = "/bin/zsh"
+
+[window]
+decorations = "full"
+dynamic_padding = true
+
+[window.padding]
+x = 2
+y = 2
+
+[scrolling]
+history = 10000
+multiplier = 1

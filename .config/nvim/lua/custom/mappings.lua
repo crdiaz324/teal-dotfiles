@@ -13,6 +13,9 @@ M.general = {
       "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>",
       "Toggle comment",
     },
+    ["<leader>d"] = {
+      "\"_d",
+    },
   },
   n = {
     ["gc"] = {
@@ -27,7 +30,7 @@ M.general = {
       end,
       "Toggle floating term",
     },
-  }
+  },
 }
 
 M.dap = {

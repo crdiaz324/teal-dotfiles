@@ -131,6 +131,7 @@ brew "timberio/brew/vector"
 brew "weaveworks/tap/eksctl"
 cask "1password-cli"
 cask "alacritty"
+cask "amethyst"
 cask "android-file-transfer"
 cask "aws-vault"
 cask "caffeine"
@@ -154,3 +155,35 @@ cask "oracle-jdk"
 cask "osxfuse"
 cask "session-manager-plugin"
 cask "ssh-tunnel-manager"
+mas "1Password for Safari", id: 1569813296
+mas "ASUS Device Discovery", id: 995124504
+mas "ASUS Firmware Restoration", id: 1020519014
+mas "Authen", id: 1602945200
+mas "Bitwarden", id: 1352778147
+mas "Calendars", id: 608834326
+mas "Clocker", id: 1056643111
+mas "Commander One", id: 1035236694
+mas "CryptoTicker", id: 1487304322
+mas "G2FA", id: 6444865161
+mas "GarageBand", id: 682658836
+mas "GCal for Google Calendar", id: 1107163858
+mas "Goodnotes", id: 1444383602
+mas "Hand Mirror", id: 1502839586
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Kindle Classic", id: 405399194
+mas "Kiwi for Gmail", id: 986304488
+mas "LyricsX", id: 1254743014
+mas "NordVPN", id: 905953485
+mas "NordVPN IKE", id: 1116599239
+mas "Numbers", id: 409203825
+mas "OwlOCR", id: 1499181666
+mas "Pages", id: 409201541
+mas "Remote Desktop - VNC", id: 472995993
+mas "Skitch", id: 425955336
+mas "Slack", id: 803453959
+mas "Tailscale", id: 1475387142
+mas "ToothFairy", id: 1191449274
+mas "VictronConnect", id: 1084677271
+mas "WireGuard", id: 1451685025
+mas "Xcode", id: 497799835

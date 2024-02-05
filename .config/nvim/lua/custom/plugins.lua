@@ -4,7 +4,8 @@ local plugins = {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "rust-analyzer",
+        -- "rust-analyzer",
+        "pyright",
       },
     },
   },
@@ -12,6 +13,7 @@ local plugins = {
     "neovim/nvim-lspconfig",
     config = function()
       require "plugins.configs.lspconfig"
+      require "custom.configs.lspconfig"
     end,
   },
   {
@@ -51,6 +53,42 @@ local plugins = {
       table.insert(M.sources, {name = 'crates'})
       return M
     end,
-  }
+  },
+	{
+		"kevinhwang91/nvim-ufo",
+		event = "BufEnter",
+		dependencies = {
+			"kevinhwang91/promise-async",
+		},
+		config = function()
+			--- @diagnostic disable: unused-local
+			require("ufo").setup({
+				provider_selector = function(_bufnr, _filetype, _buftype)
+					return { "treesitter", "indent" }
+				end,
+			})
+		end,
+	},
+	{
+		"zbirenbaum/copilot-cmp",
+		event = { "BufEnter" },
+		dependencies = { "zbirenbaum/copilot.lua" },
+		config = function()
+			require("copilot_cmp").setup()
+		end,
+	},
+  {
+  	"iamcco/markdown-preview.nvim",
+	  ft = "markdown",
+	  build = function()
+		  vim.fn["mkdp#util#install"]()
+	  end,
+	  cmd = {
+	  	"MarkdownPreviewToggle",
+  		"MarkdownPreview",
+  		"MarkdownPreviewStop",
+	  },
+  },
 }
+
 return plugins

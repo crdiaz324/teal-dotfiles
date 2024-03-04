@@ -23,7 +23,7 @@ alias grep="grep --color"
 alias dev="cd ${HOME}/Documents/Dev"
 alias cdgit="cd ${HOME}/Documents/Dev/Git"
 alias cddev="cd ${HOME}/Documents/Dev"
-alias vi="nvim"
+alias vi="nvim-lazy"
 alias updatedb='gupdatedb --localpaths="/" --prunepaths="/Volumes /System" --output=$HOME/locatedb 2>&1|ggrep -E -v "Operation not permitted|Permission denied"'
 if which glocate > /dev/null; then
   [[ -f "${HOME}/locatedb" ]] && export LOCATE_PATH="${HOME}/locatedb"
